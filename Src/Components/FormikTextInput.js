@@ -34,7 +34,7 @@ export default class FormikTextInput extends Component<Props> {
     } = this.props;
 
     return (
-      <View style={{ marginLeft: 15, marginRight: 15 }}>
+      <View style={{ alignItems: "center" }}>
         <TextInput
           style={[
             styles.textInputContainer,
@@ -58,13 +58,11 @@ export default class FormikTextInput extends Component<Props> {
 const styles = StyleSheet.create({
   textInputContainer: {
     height: 44,
-    // width: 300,
+    width: 300,
     borderWidth: 1,
     marginTop: 10,
     borderRadius: 5,
     paddingLeft: 10
-
-    // alignSelf: "center"
   },
   textStyle: { color: "red", marginTop: 5, marginLeft: 5 }
 });
